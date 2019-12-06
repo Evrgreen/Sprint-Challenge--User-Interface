@@ -139,6 +139,8 @@ nav{
     align-items: center;
     justify-content: center;
 }
+
+/* Color Challenge */
 .boxes div:nth-of-type(1){
   background-color:teal;
 }
@@ -169,7 +171,7 @@ nav{
 .boxes div:nth-of-type(10){
   background-color:dodgerblue;
 }
-
+/* End color challenge */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -206,71 +208,81 @@ footer nav a {
 
 /* styling for about page starts here */
 
+/* Styling for header  */
 
+    .about-page-nav{
+        position:relative;
+            left:1em;
+        width:68%;
+    }
+    .header-jumbo{
+        width:66%;
+    }
+    .header-jumbo img{
+        max-width:100%;
+        width:100%;
+    }
+/* heading styling end */
+/* About page main section (mission statement,2x2 grid, call to action block) */
+    .about-page-wrapper{
+        margin: 0 20em;
+        text-align:left;
+    }
+    .about-page-wrapper p{
+        line-height: 2em;
+    }
+    .about-page-wrapper h2{
+        font-size:1.5em;
+    }
+    /* Inside wrapper: Mission Statement */
+        .about-mission-statement{
+            border-bottom: 3px dotted black;
+            font-weight:650;
+            padding:.2em 1em 2em;
+        }
+        .about-mission-statement h1{
+            font-size:2em;
+        }
+    /* Mission Statement end */
+    /* Inside Wrapper: 2x2 grid */
+        .about-boxes{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:space-between;
 
-.about-page-nav{
-    position:relative;
-        left:1em;
-    width:68%;
-}
-.header-jumbo{
-    width:66%;
-}
-.header-jumbo img{
-    max-width:100%;
-    width:100%;
-}
-.about-page-wrapper{
-    margin: 0 20em;
-    text-align:left;
-}
-.about-page-wrapper p{
-    line-height: 2em;
-}
-.about-mission-statement{
-    border-bottom: 3px dotted black;
-    font-weight:650;
-    padding:.2em 1em 2em;
-}
-.about-boxes{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
+        }
+        .about-boxes>div{
+            border-bottom:3px dotted;
+            font-size:1.1em;
+            font-weight:600;
+            margin:1.5em;
+            width:40%;
+        }
 
-}
-.about-boxes>div{
-    border-bottom:3px dotted;
-    font-size:1.1em;
-    font-weight:600;
-    margin:1.5em;
-    width:40%;
-
-}
-
-.about-boxes>div img{
-    max-width:100%;
-    width:100%;
-}
-.about-boxes>div img, .about-boxes>div p,.about-boxes>div button{
-    margin-bottom:1.3em;
-} 
-.about-boxes>div button{
-    background:white;
-    border:3px solid black;
-    border-radius:10px;
-    font-weight:550;
-    font-size:1.2em;
-    padding:.8em 2.4em;
-}
-/* end of 2x2 box grid */
-/* call to action */
-.cta{    
-    padding:1.5em 2em;
-}
-.cta h2{
-    font-size:2em;
-}
-.cta p{
-    font-size:1.3em;
-    line-height:2em;
-}
+        .about-boxes>div img{
+            max-width:100%;
+            width:100%;
+        }
+        .about-boxes>div img, .about-boxes>div p,.about-boxes>div button{
+            margin-bottom:1.3em;
+        } 
+        .about-boxes>div button{
+            background:white;
+            border:3px solid black;
+            border-radius:10px;
+            font-weight:550;
+            font-size:1.2em;
+            padding:.8em 2.4em;
+        }
+    /* end of 2x2 box grid */
+    /* Inside Wrapper: call to action */
+        .cta{    
+            padding:1.5em 2em;
+        }
+        .cta h2{
+            font-size:2em;
+        }
+        .cta p{
+            font-size:1.3em;
+            line-height:2em;
+        }
